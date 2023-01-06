@@ -2,17 +2,13 @@
 Hoje nosso foco será **refatorar** nossos endpoints do Labecommerce e torná-los mais robustos e preparados para lidar com erros.
 
 ## Get All Users
-- verificar se existem users
-    - caso não existam, retornar uma mensagem de erro apropriada
+- não precisa de validação, basta refatorar para o uso do try/catch
 
 ## Get All Products
-- verificar se existem products
-    - caso não existam, retornar uma mensagem de erro apropriada
+- não precisa de validação, basta refatorar para o uso do try/catch
 
 ## Search Product by name
-- tratar a entrada (query params), para que nosso endpoint não diferencie letras maiúsculas e minúsculas (por exemplo, nosso programa deve lidar com os termos "Camiseta" e "camiseta" da mesma forma)
-- verificar se existem products com o termo da busca
-    - se não existirem, retornar uma mensagem de erro apropriada
+- query params deve possuir pelo menos um caractere
 
 ## Create User
 - verificar se todos os dados do body foram informados e seus respectivos tipos
