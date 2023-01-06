@@ -2,34 +2,21 @@
 Mesmo fluxo do exercício 1.
 
 ## Get Products by id
-- verificar se existe um product com o id enviado
-    - caso não exista, retorne uma mensagem de erro apropriada
+- validar que o produto existe
 
 ## Get User Purchases by User id
-- verificar se existe um user com o id enviado
-    - caso não exista, retorne uma mensagem de erro apropriada
-- verificar se o user enviado fez alguma compra
-    - caso não tenha feito, retorne uma mensagem de erro apropriada
+- validar que o produto existe
 
 ## Delete User by id
-- verificar se existe um user com o id enviado
-    - caso não exista, retorne uma mensagem de erro apropriada
+- validar que o usuário existe
 
 ## Delete Product by id
-- verificar se existe um product com o id enviado
-    - caso não exista, retorne uma mensagem de erro apropriada
+- validar que o produto existe
 
 ## Edit User by id
-- verificar se existe um user com o id enviado
-    - caso não exista, retorne uma mensagem de erro apropriada
-- verificar se o body foi enviado corretamente
-    - caso as entradas não tenham sido enviadas corretamente, retorne uma mensagem de erro apropriada
+- validar que o usuário existe
+- validar o body
 
 ## Edit Product by id
-- verificar se existe um product com o id enviado
-    - caso não exista, retorne uma mensagem de erro apropriada
-- verificar se o body foi enviado corretamente
-    - caso as entradas não tenham sido enviadas corretamente, retorne uma mensagem de erro apropriada
-
-
-Lembre-se de referenciar o material para ordenar as rotas corretamente ;)
+- validar que o produto existe
+- validar o body
