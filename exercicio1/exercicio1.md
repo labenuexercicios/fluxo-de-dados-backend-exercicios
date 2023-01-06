@@ -11,21 +11,19 @@ Hoje nosso foco será **refatorar** nossos endpoints do Labecommerce e torná-lo
 - query params deve possuir pelo menos um caractere
 
 ## Create User
-- verificar se todos os dados do body foram informados e seus respectivos tipos
-    - caso o body esteja incompleto e/ou incorreto, retorne uma mensagem de erro apropriada
-- verificar se existe outro user com o mesmo email
-    - caso exista, retornar mensagem de erro apropriada
+- validar o body
+- extra:
+    - não deve ser possível criar mais de uma conta com a mesma id
+    - não deve ser possível criar mais de uma conta com o mesmo e-mail
 
 ## Create Product
-- verificar se todos os dados do body foram informados e seus respectivos tipos
-    - caso o body esteja incompleto e/ou incorreto, retorne uma mensagem de erro apropriada
-- verificar se existe outro product com o mesmo nome
-    - caso exista, retornar mensagem de erro apropriada
+- validar o body
+- extra:
+    - não deve ser possível criar mais de um produto com a mesma id
 
 ## Create Purchase
-- verificar se todos os dados do body foram informados e seus respectivos tipos
-    - caso o body esteja incompleto e/ou incorreto, retorne uma mensagem de erro apropriada
-- verificar se realmente existe um user com o userId informado
-    - caso não exista, retorne uma mensagem de erro apropriada
-- verificar se realmente existe um product com o productId informado
-    - caso não exista, retorne uma mensagem de erro apropriada
+- validar o body
+- extra:
+    - id do usuário que fez a compra deve existir no array de usuários cadastrados
+    - id do produto que foi comprado deve existir no array de produtos cadastrados
+    - a quantidade e o total da compra devem estar com o cálculo correto
